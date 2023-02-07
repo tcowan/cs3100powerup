@@ -28,12 +28,12 @@ sudo apt-get update
 
 if [ $os == "20.04" ] 
 then
-sudo apt-get -y install ruby-full ruby-build ruby-dev build-essential python2 python3 python lynx locales locales-all vim nano sqlite3 qemu-system-x86
+sudo apt-get -y install ruby-full ruby-build ruby-dev build-essential python2 python3 python lynx locales locales-all vim nano sqlite3 qemu-system-x86 qemu-kvm psmisc
 fi
 
 if [ $os == "22.04" ] 
 then
-sudo apt-get -y install ruby-full ruby-build ruby-dev build-essential python2 python3 2to3 python2-minimal python2 dh-python python-is-python3 lynx locales locales-all vim nano sqlite3 qemu-system-x86
+sudo apt-get -y install ruby-full ruby-build ruby-dev build-essential python2 python3 2to3 python2-minimal python2 dh-python python-is-python3 lynx locales locales-all vim nano sqlite3 qemu-system-x86 qemu-kvm psmisc
 fi
 
 sudo echo 'America/Denver' > /etc/timezone
